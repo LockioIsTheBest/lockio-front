@@ -1,9 +1,13 @@
 <template>
-  <div class="bg-gray-900 h-screen">
-    <NavBar></NavBar>
-    <div class="text-center">
-      <h1 class="text-5xl font-bold text-yellow-300 mt-8">Lockio</h1>
-      <LockersGrid></LockersGrid>
+  <div class="flex">
+    <div class="h-screen">
+      <NavBar></NavBar>
+    </div>
+    <div class="flex-auto">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold text-yellow-300 mt-12">Lockio</h1>
+        <LockersGrid></LockersGrid>
+      </div>
     </div>
   </div>
 </template>

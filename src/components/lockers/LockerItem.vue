@@ -1,6 +1,9 @@
 <template>
-  <button class="bg-indigo-800 hover:bg-indigo-700 font-bold rounded-xl w-24 h-14">
+  <button class="font-bold rounded-xl p-6 min-w-full"
+          :disabled="!isAvailable"
+          :class="{'bg-red-500': !isAvailable, 'bg-green-500': isAvailable}">
     {{ props.locker.id + 1 }}
+    <br>
     {{ status }}
   </button>
 </template>
@@ -18,6 +21,10 @@ const lockerStore = useLockerStore();
 
 const status = computed(() => {
   return lockerStore.lockers[props.locker.id].status === 'available' ? "Open" : "Closed";
+});
+
+const isAvailable = computed(() => {
+  return lockerStore.lockers[props.locker.id].status === 'available';
 });
 </script>
 
