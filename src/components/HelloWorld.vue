@@ -1,7 +1,5 @@
-<script setup>
-
-</script>
-
 <template>
-  <h1 class="text-3xl font-bold underline text-center text-yellow-300 mt-3"> Lockio team is amazing !!! </h1>
+  <h1 class="text-5xl font-bold text-center text-yellow-300 mt-10">
+    Lockio
+  </h1>
 </template>
