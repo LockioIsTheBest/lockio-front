@@ -5,9 +5,7 @@
       <div>partout, tout le temps.</div>
     </div>
     <div class="flex-col text-xl mt-10">
-      <div>
-        Cela n’a jamais été aussi pratique
-      </div>
+      <div>Cela n’a jamais été aussi pratique</div>
       <div>
         d’avoir des affaires <span class="line-through">encombrantes</span>.
       </div>
@@ -15,9 +13,6 @@
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
