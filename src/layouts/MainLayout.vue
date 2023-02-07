@@ -16,7 +16,7 @@
     <div class="mt-8">
       <LandingPageRow></LandingPageRow>
     </div>
-    <div class="mt-12">
+    <div class="mt-8">
       <MainQuestions></MainQuestions>
     </div>
   </div>
