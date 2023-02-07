@@ -8,9 +8,11 @@
     line-height: 24px;
     font-weight: 400;
 
+    --color-primary: #303030;
+
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #1e1a25;
+    background-color: #FFFCEA;
+    color: var(--color-primary);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;

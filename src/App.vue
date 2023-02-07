@@ -1,18 +1,14 @@
 <template>
-  <div class="flex">
-    <div class="h-screen">
-      <NavBar></NavBar>
-    </div>
-    <div class="flex-auto">
-      <div class="text-center">
-        <h1 class="text-5xl font-bold text-yellow-300 mt-12">Lockio</h1>
-        <LockersGrid></LockersGrid>
-      </div>
-    </div>
-  </div>
+  <router-view></router-view>
 </template>
+<script setup lang="ts">
+import {useRouter} from "vue-router";
+import {onErrorCaptured} from "vue";
 
-<script setup>
-import NavBar from "./components/NavBar.vue";
-import LockersGrid from "./components/lockers/LockersGrid.vue";
+const router = useRouter();
+onErrorCaptured((err, vm, info) => {
+      console.log(err, vm, info);
+      router.push({name: 'NotFound'});
+    }
+)
 </script>
