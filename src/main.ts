@@ -10,9 +10,5 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 library.add(faChevronRight);
 
 const pinia = createPinia();
-const app = createApp(App);
 
-app.use(pinia);
-app.mount("#app");
-
-createApp(App).use(router).mount("#app");
+createApp(App).use(router).use(pinia).mount("#app");

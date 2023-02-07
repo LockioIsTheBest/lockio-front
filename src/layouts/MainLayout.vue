@@ -13,8 +13,11 @@
       </div>
       <div class="mt-16 text-3xl font-extrabold">Lockio, c'est quoi ?</div>
     </div>
-    <div class="mt-16">
+    <div class="mt-8">
       <LandingPageRow></LandingPageRow>
+    </div>
+    <div class="mt-12">
+      <MainQuestions></MainQuestions>
     </div>
   </div>
 </template>
@@ -24,6 +27,7 @@ import NavBar from "../components/NavBar.vue";
 import TitleSubtitle from "../components/TitleSubtitle.vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import LandingPageRow from "../components/LandingPageRow.vue";
+import MainQuestions from "../components/MainQuestions.vue";
 </script>
 
 <style scoped>
