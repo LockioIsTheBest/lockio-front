@@ -1,5 +1,5 @@
 <template>
-  <div id="main">
+  <div id="container">
     <NavBar></NavBar>
     <div class="flex-col text-center">
       <TitleSubtitle></TitleSubtitle>
@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import NavBar from "../components/NavBar.vue";
+import NavBar from "../components/navbars/NavBar.vue";
 import TitleSubtitle from "../components/TitleSubtitle.vue";
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import LandingPageRow from "../components/LandingPageRow.vue";
@@ -32,5 +32,7 @@ import MainQuestions from "../components/MainQuestions.vue";
 </script>
 
 <style scoped>
-
+#container {
+  margin: 4vh 10vw 4vh 10vw;
+}
 </style>
