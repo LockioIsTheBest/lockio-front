@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="container">
     <nav class="w-100 flex items-center justify-between">
       <div class="flex items-center cursor-pointer" @click="$router.push('/')">
         <img src="/src/assets/lockio.svg" alt="logo" class="h-10 w-10"/>
@@ -31,7 +31,8 @@
           </div>
         </div>
         <div class="flex flex-col text-center items-center mt-8 md:w-2/5">
-          <button class="bg-gray-700 hover:bg-gray-900 text-white rounded-xl p-3 w-1/2 text-center">
+          <button @click="$router.push({ name: 'Lockios' })"
+                  class="bg-gray-700 hover:bg-gray-900 text-white rounded-xl p-3 w-1/2 text-center">
             Se connecter
           </button>
           <div class="my-2">ou</div>
@@ -69,6 +70,10 @@
 </script>
 
 <style scoped>
+#container {
+  margin: 4vh 10vw 4vh 10vw;
+}
+
 #email {
   background-color: white !important;
 }
