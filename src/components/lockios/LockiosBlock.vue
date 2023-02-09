@@ -10,9 +10,7 @@
       </div>
     </div>
     <div class="mt-8 md:w-1/2 md:mt-0">
-      <div class="text-2xl font-bold">
-        Infos utiles
-      </div>
+      <div class="text-2xl font-bold">Infos utiles</div>
       <div class="mt-2 md:mt-6">
         <useful-infos></useful-infos>
       </div>
@@ -21,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import LockerGrid from "./LockerGrid.vue"
+import LockerGrid from "./LockerGrid.vue";
 import UsefulInfos from "./UsefulInfos.vue";
 
 const props = defineProps<{

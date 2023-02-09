@@ -5,11 +5,11 @@
       <TitleSubtitle></TitleSubtitle>
       <div class="mt-8">
         <button
-            class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded"
-            @click="$router.push({ name: 'Login' })"
+          class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded"
+          @click="$router.push({ name: 'Login' })"
         >
           Réserver un Lockio
-          <font-awesome-icon icon="fa-solid fa-chevron-right"/>
+          <font-awesome-icon icon="fa-solid fa-chevron-right" />
         </button>
       </div>
       <div class="mt-16 text-3xl font-extrabold">Lockio, c'est quoi ?</div>
@@ -26,7 +26,7 @@
 <script setup>
 import NavBar from "../components/navbars/NavBar.vue";
 import TitleSubtitle from "../components/TitleSubtitle.vue";
-import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import LandingPageRow from "../components/LandingPageRow.vue";
 import MainQuestions from "../components/MainQuestions.vue";
 </script>
