@@ -3,6 +3,9 @@ import MainLayout from "../layouts/MainLayout.vue";
 import AboutPage from "../layouts/AboutPage.vue";
 import NotFound from "../layouts/NotFoundPage.vue";
 import LoginPage from "../layouts/LoginPage.vue";
+import LockiosPage from "../layouts/LockiosPage.vue";
+import ReservationsPage from "../layouts/ReservationsPage.vue";
+import ProfilePage from "../layouts/ProfilePage.vue";
 
 const routes = [
   {
@@ -14,6 +17,21 @@ const routes = [
     path: "/about",
     name: "About",
     component: AboutPage,
+  },
+  {
+    path: "/lockios",
+    name: "Lockios",
+    component: LockiosPage,
+  },
+  {
+    path: "/reservations",
+    name: "Reservations",
+    component: ReservationsPage,
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: ProfilePage,
   },
   {
     path: "/login",
